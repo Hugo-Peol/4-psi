@@ -56,7 +56,7 @@ services:
       MYSQL_USER: ${DB_USERNAME:-4psi_user}
       MYSQL_PASSWORD: ${DB_PASSWORD:-4psi_secret}
     ports:
-      - "3306:3306"
+      - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
       - ./docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
